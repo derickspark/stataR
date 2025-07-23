@@ -1,13 +1,13 @@
 Package: stataR
-Title: Stata-Like Tabulation Tools for R
+Title: Stata-Style Tabulation Tools for R
 Version: 0.1.0
-Authors@R: 
+Authors@R:
     person("Derick S. Park", email = "derickspark@gmail.com", role = c("aut", "cre"))
-Description: Provides Stata-style tabulation and summary statistics using tidyverse. Includes smart_crosstab for grouped summaries.
+Description: Provides Stata-style summary tables including stata_tab() and stata_crosstab().
 License: MIT
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
     tidyverse,
     rlang,
     tibble
