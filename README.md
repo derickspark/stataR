@@ -27,7 +27,7 @@ You can install the development version from GitHub:
 
 ```r
 # install.packages("remotes")
-remotes::install_github("yourusername/stataR")
+remotes::install_github("derickspark/stataR")
 ```
 
 ## 사용법 Usage
