@@ -5,13 +5,14 @@
 
 ## Overview
 
-**stataR**은 STATA스타일의 기초통계 명령을 R에서 유사하게 구현하도록 만들어진 명령어입니다. TIDYVERSE 문법과 호환됩니다 
+**stataR**은 STATA스타일의 기초통계 명령을 R에서 유사하게 구현하도록 만들어진 명령어입니다. TIDYVERSE 문법과 호환됩니다.
+
 **stataR** is a lightweight R package that provides **Stata-style tabulation tools** using tidyverse syntax.  
 
 두 개의 명령어를 사용하실 수 있습니다. 
 It includes two main functions:
 
-- `st_tab()`: 변수하나 또는 여러 개에 대한 요약 통계량을 보여주는 명령입니다. 연속형 변수는 평균/표준편차/최소/최대/중간값을 출력하고, 범주형 변수는 빈도와 비중을 출력합니다. 
+- `st_tab()`: 변수하나 또는 여러 개에 대한 요약 통계량을 보여주는 명령입니다. 연속형 변수는 평균/표준편차/최소/최대/중간값을 출력하고, 범주형 변수는 빈도와 비중을 출력합니다.
 - `st_tab()`: Summarize one or more variables (frequencies for categorical, statistics for numeric).
 - `st_crosstab()`: 주어진 범주형 변수에 대한 교차표를 출력합니다. 대상 변수가 범주형이면 빈도와 비중을, 연속형 변수면 평균/표준편차/최소/최대/중간값을 출력합니다. 
 - `st_crosstab()`: Grouped summary by a categorical variable, supporting both continuous and categorical targets.
