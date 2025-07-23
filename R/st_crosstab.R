@@ -1,4 +1,4 @@
-#' Stata-style Grouped Cross-tabulation Summary
+#' Stata-style Grouped Cross-tabulation Summary (st_crosstab)
 #'
 #' @description Group a categorical variable and summarize following variables:
 #' numeric → mean, sd, min, median, max; 
@@ -8,7 +8,7 @@
 #' @param ... First argument is grouping variable, followed by variables to summarize
 #' @return A tibble with group-wise summaries
 #' @export
-stata_crosstab <- function(data, ...) {
+st_crosstab <- function(data, ...) {
   vars <- rlang::enquos(...)
   if (length(vars) < 2) stop("At least one grouping variable and one analysis variable are required.")
 
