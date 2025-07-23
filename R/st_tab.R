@@ -1,13 +1,14 @@
-#' Stata-style One-way Summary Table
+#' Stata-style One-way Summary Table (st_tab)
 #'
-#' @description Automatically summarizes a list of variables.
-#' Categorical variables show frequency and percentage; numeric variables show mean, sd, min, median, max.
+#' @description Automatically summarizes a list of variables:
+#' categorical variables show frequency and percentage; 
+#' numeric variables show mean, sd, min, median, max.
 #'
 #' @param data A data.frame or tibble
 #' @param ... Unquoted variable names to summarize
 #' @return A tibble with summary per variable
 #' @export
-stata_tab <- function(data, ...) {
+st_tab <- function(data, ...) {
   vars <- rlang::enquos(...)
   num_summary <- list()
 
